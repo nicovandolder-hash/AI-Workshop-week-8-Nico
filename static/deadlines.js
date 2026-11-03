@@ -15,7 +15,7 @@ function showDeadline(row, cell, opportunity) {
     colour = "deadline-overdue";
   } else if (days === 0) {
     text = "Due today";
-    colour = "deadline-soon";
+    colour = "deadline-today";
   } else if (days === 1) {
     text = "Due in 1 day";
     colour = "deadline-soon";

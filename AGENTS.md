@@ -35,5 +35,5 @@ A team dashboard for funding opportunities: grants, startup competitions, incuba
 - Keep the code simple. A beginner must be able to read it.
 - Don't add new libraries.
 - Plain JavaScript only. No React, no build step.
-- `days_left()` in `app/dates.py` is tested and correct. Always reuse it. Never count days another way.
-- Don't change `app/dates.py` or `tests/test_dates.py`. Other team apps use them.
+- `days_left()` in `app/dates.py` counts calendar days, not hours: a deadline today is `0`, whatever the time. Always reuse it. Never count days another way.
+- Don't change `app/dates.py` or `tests/test_dates.py` without asking the client first. Other team apps use them.

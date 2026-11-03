@@ -16,7 +16,14 @@
   color: #991b1b;
 }
 
-/* Today or in the next 7 days: yellow. */
+/* Today: orange, so it stands out from the rest of the week. */
+.deadline-today {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fb923c;
+}
+
+/* In the next 7 days: yellow. */
 .deadline-soon {
   background: #fef3c7;
   color: #92400e;
