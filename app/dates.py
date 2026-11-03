@@ -1,10 +1,10 @@
-from datetime import date, datetime
+from datetime import date
 
 
 def days_left(deadline: date) -> int:
-    """Return how many days are left until the deadline.
+    """Return how many calendar days are left until the deadline.
 
-    Negative means the deadline has passed.
+    0 means the deadline is today, 1 means tomorrow, -1 means yesterday.
+    The time of day doesn't matter, only the date.
     """
-    deadline_time = datetime(deadline.year, deadline.month, deadline.day)
-    return (deadline_time - datetime.now()).days
+    return (deadline - date.today()).days
